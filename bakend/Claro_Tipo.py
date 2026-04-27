@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 import warnings
 warnings.filterwarnings("ignore")
 
-# CARGA DE DATASET
+# CARGA DE DATASET 
 df = pd.read_csv('Claro_Tipo.csv', sep=',') 
 df.columns = df.columns.str.strip()
 
