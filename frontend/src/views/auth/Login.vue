@@ -12,36 +12,21 @@ document.title = 'Iniciar Sesión'
 const email = ref('')
 const password = ref('')
 const isLoggingIn = ref(false)
-
 const router = useRouter()
 const route = useRoute()
-const url = route.query.url
 
 async function handleLogin() {
   if (isLoggingIn.value) return
   isLoggingIn.value = true
-
   try {
-    const res = await api.post('/login', {
-      email: email.value,
-      password: password.value
-    })
-
+    const res = await api.post('/login', { email: email.value, password: password.value })
     localStorage.setItem('access_token', res.data.access_token)
-
-    const user = await fetchUser()
-    localStorage.setItem('user', JSON.stringify(user))
-
+    localStorage.setItem('user', JSON.stringify(await fetchUser()))
     router.push({ name: 'Dashboard' })
-
   } catch (error) {
     const code = error?.response?.data?.code
-
     if (code === 'email_not_verified') {
-      router.push({
-        name: 'VerifyEmail',
-        query: { email: email.value, onload: true }
-      })
+      router.push({ name: 'VerifyEmail', query: { email: email.value, onload: true } })
       ElMessage.warning('Tu correo aún no ha sido verificado.')
     } else {
       ElMessage.error('Credenciales incorrectas.')
@@ -52,156 +37,140 @@ async function handleLogin() {
 }
 
 async function fetchUser() {
-  try {
-    const { data } = await api.get('/me')
-    return data
-  } catch {
-    return null
-  }
+  try { return (await api.get('/me')).data } catch { return null }
 }
 
-async function confirmEmail() {
+onMounted(async () => {
+  const url = route.query.url
   if (!url) return
-
   try {
     await axios.get(url)
     ElMessage.success('Correo verificado correctamente.')
   } catch {
     ElMessage.error('El enlace expiró o es inválido.')
   }
-}
-
-onMounted(() => {
-  confirmEmail()
 })
 </script>
 
 <template>
-  <div class="login-layout">
-
-    <!-- IZQUIERDA (IMAGEN) -->
-    <div class="login-left" :style="{ backgroundImage: `url(${bg})` }"></div>
-
-    <!-- DERECHA (FORM + FONDO FUTURISTA) -->
-    <div class="login-right">
-
-      <div class="login-box">
-        <h2 class="title">Bienvenido</h2>
-        <p class="subtitle">Accede a tu Modelo IA</p>
-
+  <div class="login-wrap">
+    <div class="login-img" :style="{ backgroundImage: `url(${bg})` }">
+      <div class="login-img__overlay">
+        <h1>Inteligencia al<br><span>servicio tuyo</span></h1>
+        <p>Accede a modelos de IA de última generación.</p>
+      </div>
+    </div>
+    <!-- Panel formulario -->
+    <div class="login-panel">
+      <el-card class="login-card" shadow="never">
+        <div class="login-card__header">
+          <el-avatar :size="48" class="login-avatar">
+            <el-icon :size="24">
+              <Lock />
+            </el-icon>
+          </el-avatar>
+          <h2 class="el-text is-bold" style="font-size: 1.4rem">Bienvenido</h2>
+          <p class="el-text el-text--info" style="font-size: 0.85rem">Accede a tu modelo IA</p>
+        </div>
         <el-form @submit.prevent="handleLogin" class="login-form">
-
-          <el-input v-model="email" type="email" placeholder="Correo " :prefix-icon="Message"
-            size="large" />
-
-          <el-input v-model="password" type="password" placeholder="Contraseña" :prefix-icon="Lock" size="large"
-            show-password />
-
-          <el-button type="primary" native-type="submit" size="large" class="login-btn" :loading="isLoggingIn">
+          <el-form-item>
+            <el-input v-model="email" type="email" placeholder="Correo electrónico" :prefix-icon="Message"
+              size="large" />
+          </el-form-item>
+          <el-form-item>
+            <el-input v-model="password" type="password" placeholder="Contraseña" :prefix-icon="Lock" size="large"
+              show-password />
+          </el-form-item>
+          <el-button type="primary" native-type="submit" size="large" :loading="isLoggingIn"
+            style="width: 100%; border-radius: 10px">
             Ingresar
           </el-button>
-
         </el-form>
-      </div>
-
+      </el-card>
     </div>
   </div>
 </template>
 
 <style scoped>
-/* LAYOUT GENERAL */
-.login-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.login-wrap {
+  display: flex;
   min-height: 100vh;
 }
 
-/* IZQUIERDA - IMAGEN */
-.login-left {
-  background: url("./assets/logos-login/fondo-login.jpg") center/cover no-repeat;
-}
-
-/* DERECHA - FONDO FUTURISTA */
-.login-right {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ── Imagen ── */
+.login-img {
+  display: none;
+  flex: 1;
+  background: center / cover no-repeat;
   position: relative;
-  overflow: hidden;
-
-  background: radial-gradient(circle at 20% 20%, #6366f1, transparent 40%),
-    radial-gradient(circle at 80% 70%, #9333ea, transparent 40%),
-    #0f172a;
 }
 
-/* EFECTO GLOW */
-.login-right::before {
-  content: "";
+@media (min-width: 900px) {
+  .login-img {
+    display: block;
+  }
+}
+
+.login-img__overlay {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: #6366f1;
-  filter: blur(120px);
-  opacity: 0.2;
-}
-
-/* FORM BOX (GLASS) */
-.login-box {
-  position: relative;
-  z-index: 2;
-
-  width: 100%;
-  max-width: 400px;
-  padding: 2rem;
-  border-radius: 16px;
-
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(14px);
-
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-/* TITULOS */
-.title {
-  
-  font-size: 1.8rem;
-  font-weight: 600;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+  background: linear-gradient(to top, rgba(15, 23, 42, .85) 30%, transparent);
   color: #fff;
 }
 
-.subtitle {
-  font-size: 0.9rem;
-  color: #cbd5f5;
-  margin-bottom: 1.5rem;
+.login-img__overlay h1 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: .75rem;
 }
 
-/* FORM */
-.login-form {
+.login-img__overlay h1 span {
+  color: #a5b4fc;
+}
+
+.login-img__overlay p {
+  color: rgba(255, 255, 255, .6);
+  font-size: .9rem;
+}
+
+/* ── Panel ── */
+.login-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+/* ── Card ── */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px !important;
+}
+
+.login-card__header {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
 }
 
-/* INPUTS */
-:deep(.el-input__wrapper) {
-  border-radius: 10px;
+.login-avatar {
+  background-color: var(--el-color-primary) !important;
+  color: #fff !important;
+  margin-bottom: .5rem;
 }
 
-/* BOTON */
-.login-btn {
-  margin-top: 10px;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .login-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .login-left {
-    display: none;
-  }
+/* ── Form ── */
+.login-form .el-form-item {
+  margin-bottom: 1rem;
 }
 </style>
