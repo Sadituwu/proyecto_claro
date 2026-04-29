@@ -47,3 +47,13 @@ razon = encoders['Razon_abandono'].inverse_transform(pred)
 
 print(f"EL CLIENTE SE IRA POR: {razon[0].upper()}")
 print("="*40 + "\n")
+
+#CARGA ENTRENAMIENTO
+import joblib
+
+modelo = joblib.load('modelo_claro.pkl')
+scaler = joblib.load('scaler_claro.pkl')
+encoders = joblib.load('encoders_claro.pkl')
+columnas_X = joblib.load('columnas_X.pkl')
+
+print("¡Modelo y herramientas cargados y listos para usar!")
