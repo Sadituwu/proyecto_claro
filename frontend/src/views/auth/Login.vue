@@ -69,7 +69,7 @@ onMounted(async () => {
               <Lock />
             </el-icon>
           </el-avatar>
-          <h2 class="el-text is-bold" style="font-size: 1.4rem">Bienvenidos a todos</h2>
+          <h2 class="el-text is-bold" style="font-size: 1.4rem">Bienvenidos</h2>
           <p class="el-text el-text--info" style="font-size: 0.85rem">Accede a tu modelo IA</p>
         </div>
         <el-form @submit.prevent="handleLogin" class="login-form">
