@@ -1,101 +1,201 @@
-Cliente,Antiguedad_Mes,Plan_Precio,Perfil_Pagador,Cantidad_Lineas,Claro_Club,Reclamos_mes,Reclamos_resueltos,Reclamo_Frecuente,DatosGB_Mes,Razon_abandono
-C0001,12,150,Critico,1,No,5,1,mala atencion,40,mala atencion
-C0002,48,200,excelente,3,si,2,2,pocas ofertas,100,precios altos
-C0003,5,80,regular,1,no,4,0,baja velocidad,15,mala conexion
-C0004,24,120,excelente,2,si,1,1,pocas ofertas,60,pocas promociones
-C0005,36,180,critico,4,si,6,2,cobro excesivo,80,precios altos
-C0006,2,70,regular,1,no,5,1,problema de cobertura,10,mala conexion
-C0007,60,250,excelente,5,si,3,0,mala atencion,120,mala atención
-C0008,15,90,regular,2,no,2,2,pocas ofertas,30,pocas promociones
-C0009,10,110,critico,1,no,7,1,cobro excesivo,25,precios altos
-C0010,20,130,excelente,2,si,4,4,problema de cobertura,50,mala conexion
-C0011,3,60,regular,1,no,1,0,pocas ofertas,5,pocas promociones
-C0012,50,200,critico,3,si,8,2,cobro excesivo,90,precios altos
-C0013,12,100,regular,2,no,6,0,mala atencion,45,mala atencion
-C0014,30,150,excelente,4,si,1,1,pocas ofertas,110,pocas promociones
-C0015,8,80,critico,1,no,5,0,baja velocidad,12,mala conexion
-C0016,45,250,excelente,2,si,3,3,pocas ofertas,180,precios altos
-C0017,18,120,regular,2,no,4,1,mala atencion,55,mala atencion
-C0018,24,100,excelente,3,si,0,0,pocas ofertas,70,pocas promociones
-C0019,6,90,critico,1,no,6,1,cobro excesivo,30,precios altos
-C0020,40,180,regular,5,si,5,2,baja velocidad,20,mala conexion
-C0021,14,110,excelente,2,no,2,2,pocas ofertas,65,pocas promociones
-C0022,55,200,critico,1,si,7,0,mala atencion,85,mala atencion
-C0023,2,60,regular,1,no,4,1,problema de cobertura,8,mala conexion
-C0024,36,150,excelente,4,si,1,1,pocas ofertas,130,pocas promociones
-C0025,12,100,critico,2,no,5,1,cobro excesivo,40,precios altos
-C0026,28,130,regular,3,si,6,1,mala atencion,60,mala atencion
-C0027,10,80,excelente,1,no,3,3,baja velocidad,15,mala conexion
-C0028,60,250,critico,5,si,8,2,cobro excesivo,190,precios altos
-C0029,5,70,regular,1,no,2,0,pocas ofertas,12,pocas promociones
-C0030,24,120,excelente,2,si,1,1,pocas ofertas,90,pocas promociones
-C0031,15,100,critico,1,no,6,0,mala atencion,35,mala atencion
-C0032,42,180,excelente,3,si,2,2,pocas ofertas,150,precios altos
-C0033,8,90,regular,2,no,5,1,problema de cobertura,18,mala conexion
-C0034,30,150,critico,4,si,7,1,cobro excesivo,100,precios altos
-C0035,12,110,excelente,1,no,1,1,pocas ofertas,50,pocas promociones
-C0036,50,200,regular,2,si,6,0,mala atencion,70,mala atencion
-C0037,4,60,critico,1,no,4,0,baja velocidad,5,mala conexion
-C0038,36,130,excelente,3,si,1,1,pocas ofertas,110,pocas promociones
-C0039,18,100,regular,2,no,5,1,mala atencion,40,mala atencion
-C0040,24,150,critico,5,si,8,2,cobro excesivo,130,precios altos
-C0041,10,80,excelente,1,no,3,3,problema de cobertura,20,mala conexion
-C0042,60,250,regular,4,si,2,2,pocas ofertas,195,precios altos
-C0043,2,70,critico,1,no,6,1,mala atencion,10,mala atencion
-C0044,30,120,excelente,2,si,1,1,pocas ofertas,85,pocas promociones
-C0045,12,100,regular,1,no,5,1,baja velocidad,25,mala conexion
-C0046,45,180,critico,3,si,7,0,cobro excesivo,140,precios altos
-C0047,15,110,excelente,2,no,2,2,pocas ofertas,60,pocas promociones
-C0048,24,150,regular,4,si,6,1,mala atencion,115,mala atencion
-C0049,6,90,critico,1,no,4,0,problema de cobertura,12,mala conexion
-C0050,36,200,excelente,5,si,1,1,pocas ofertas,160,precios altos
-C0051,20,130,regular,2,no,5,1,mala atencion,55,mala atencion
-C0052,55,250,critico,3,si,8,2,cobro excesivo,180,precios altos
-C0053,5,70,excelente,1,no,3,3,baja velocidad,30,mala conexion
-C0054,30,150,regular,4,si,1,1,pocas ofertas,125,pocas promociones
-C0055,12,100,critico,1,no,6,1,mala atencion,42,mala atencion
-C0056,48,180,excelente,3,si,2,2,pocas ofertas,155,precios altos
-C0057,8,80,regular,1,no,5,0,problema de cobertura,15,mala conexion
-C0058,36,120,critico,2,si,7,1,cobro excesivo,95,precios altos
-C0059,15,110,excelente,2,no,1,1,pocas ofertas,58,pocas promociones
-C0060,24,150,regular,3,si,6,0,mala atencion,110,mala atencion
-C0061,10,90,critico,1,no,4,0,baja velocidad,8,mala conexion
-C0062,60,250,excelente,5,si,2,2,pocas ofertas,198,precios altos
-C0063,2,60,regular,1,no,5,1,mala atencion,10,mala atencion
-C0064,30,130,critico,4,si,8,1,cobro excesivo,105,precios altos
-C0065,12,100,excelente,2,no,1,1,pocas ofertas,45,pocas promociones
-C0066,45,180,regular,3,si,5,2,baja velocidad,35,mala conexion
-C0067,18,110,critico,1,no,7,0,mala atencion,60,mala atencion
-C0068,24,150,excelente,4,si,2,2,pocas ofertas,140,precios altos
-C0069,6,80,regular,1,no,4,1,problema de cobertura,12,mala conexion
-C0070,36,200,critico,5,si,8,2,cobro excesivo,170,precios altos
-C0071,14,120,excelente,2,no,2,2,pocas ofertas,70,pocas promociones
-C0072,55,250,regular,3,si,6,1,mala atencion,185,mala atencion
-C0073,5,70,critico,1,no,5,0,baja velocidad,5,mala conexion
-C0074,30,150,excelente,4,si,1,1,pocas ofertas,135,pocas promociones
-C0075,12,100,regular,1,no,6,1,mala atencion,48,mala atencion
-C0076,48,180,critico,2,si,7,1,cobro excesivo,150,precios altos
-C0077,8,90,excelente,1,no,3,3,problema de cobertura,25,mala conexion
-C0078,36,120,regular,3,si,1,1,pocas ofertas,92,pocas promociones
-C0079,15,110,critico,2,no,6,0,mala atencion,65,mala atencion
-C0080,24,150,excelente,4,si,2,2,pocas ofertas,145,precios altos
-C0081,10,80,regular,1,no,4,1,baja velocidad,10,mala conexion
-C0082,60,250,critico,5,si,8,2,cobro excesivo,200,precios altos
-C0083,2,60,excelente,1,no,2,2,pocas ofertas,15,pocas promociones
-C0084,30,130,regular,3,si,5,1,mala atencion,100,mala atencion
-C0085,12,100,critico,2,no,7,1,mala atencion,38,mala atencion
-C0086,42,180,excelente,3,si,1,1,pocas ofertas,160,precios altos
-C0087,8,90,regular,1,no,4,0,problema de cobertura,20,mala conexion
-C0088,30,150,critico,4,si,8,1,cobro excesivo,110,precios altos
-C0089,18,110,excelente,2,no,1,1,pocas ofertas,62,pocas promociones
-C0090,24,150,regular,3,si,6,0,mala atencion,120,mala atencion
-C0091,10,80,critico,1,no,5,0,baja velocidad,15,mala conexion
-C0092,60,250,excelente,5,si,2,2,pocas ofertas,195,precios altos
-C0093,5,70,regular,1,no,5,1,mala atencion,25,mala atencion
-C0094,30,120,critico,2,si,7,1,cobro excesivo,80,precios altos
-C0095,12,100,excelente,1,no,1,1,pocas ofertas,50,pocas promociones
-C0096,45,180,regular,3,si,6,1,mala atencion,140,mala atencion
-C0097,15,110,critico,2,no,4,0,problema de cobertura,18,mala conexion
-C0098,24,150,excelente,4,si,1,1,pocas ofertas,130,pocas promociones
-C0099,6,90,regular,1,no,5,1,mala atencion,35,mala atencion
-C0100,36,200,critico,5,si,8,2,cobro excesivo,175,precios altos
+Cliente,Antiguedad_Mes,Plan_Precio,Perfil_Pagador,Cantidad_Lineas,Claro_Club,Reclamos_Mes,Reclamos_Resueltos,Reclamo_Frecuente,DatosGB_Mes,Razon_Abandono
+C0001,10,150,critico,1,no,5,1,mala atencion,35,mala atencion
+C0002,47,200,excelente,3,si,3,1,pocas ofertas,96,pocas promociones
+C0003,5,80,regular,1,no,3,0,baja velocidad,12,mala conexion
+C0004,25,120,excelente,2,si,1,0,pocas ofertas,58,pocas promociones
+C0005,38,180,critico,4,si,7,2,cobro excesivo,79,mala conexion
+C0006,5,70,regular,1,no,4,0,problema de cobertura,10,mala conexion
+C0007,57,250,excelente,5,si,3,0,mala atencion,121,mala atencion
+C0008,13,90,regular,2,no,3,1,pocas ofertas,32,pocas promociones
+C0009,9,110,critico,1,no,6,1,cobro excesivo,28,precios altos
+C0010,20,130,excelente,2,si,4,3,problema de cobertura,54,mala conexion
+C0011,13,150,critico,1,no,6,1,mala atencion,45,mala atencion
+C0012,50,200,excelente,3,si,1,1,pocas ofertas,94,precios altos
+C0013,8,80,regular,1,no,4,0,baja velocidad,10,mala conexion
+C0014,21,120,excelente,2,si,2,0,pocas ofertas,56,pocas promociones
+C0015,34,180,critico,4,si,5,2,cobro excesivo,77,precios altos
+C0016,1,70,regular,1,no,5,0,problema de cobertura,8,mala conexion
+C0017,60,250,excelente,5,si,4,0,mala atencion,119,mala atencion
+C0018,16,90,regular,2,no,1,1,pocas ofertas,30,pocas promociones
+C0019,12,110,critico,1,no,7,1,cobro excesivo,26,precios altos
+C0020,23,130,excelente,2,si,5,3,problema de cobertura,52,precios altos
+C0021,9,150,critico,1,no,4,1,mala atencion,43,mala atencion
+C0022,46,200,excelente,3,si,2,1,pocas ofertas,104,precios altos
+C0023,4,80,regular,1,no,5,0,baja velocidad,20,mala conexion
+C0024,24,120,excelente,2,si,0,0,pocas ofertas,54,pocas promociones
+C0025,37,180,critico,4,si,6,2,cobro excesivo,75,precios altos
+C0026,4,70,regular,1,no,6,0,problema de cobertura,6,mala conexion
+C0027,63,250,excelente,5,si,2,0,mala atencion,117,mala atencion
+C0028,12,90,regular,2,no,2,1,pocas ofertas,28,pocas promociones
+C0029,8,110,critico,1,no,8,1,cobro excesivo,24,mala conexion
+C0030,19,130,excelente,2,si,3,3,problema de cobertura,50,mala conexion
+C0031,12,150,critico,1,no,5,1,mala atencion,41,precios altos
+C0032,49,200,excelente,3,si,3,1,pocas ofertas,102,precios altos
+C0033,7,80,regular,1,no,3,0,baja velocidad,18,mala conexion
+C0034,27,120,excelente,2,si,1,0,pocas ofertas,64,pocas promociones
+C0035,33,180,critico,4,si,7,2,cobro excesivo,85,precios altos
+C0036,1,70,regular,1,no,4,0,problema de cobertura,5,mala conexion
+C0037,59,250,excelente,5,si,3,0,mala atencion,115,mala atencion
+C0038,15,90,regular,2,no,3,1,pocas ofertas,26,mala atencion
+C0039,11,110,critico,1,no,6,1,cobro excesivo,22,precios altos
+C0040,22,130,excelente,2,si,4,3,problema de cobertura,48,mala conexion
+C0041,15,150,critico,1,no,6,1,mala atencion,39,mala atencion
+C0042,45,200,excelente,3,si,1,1,pocas ofertas,100,precios altos
+C0043,3,80,regular,1,no,4,0,baja velocidad,16,mala atencion
+C0044,23,120,excelente,2,si,2,0,pocas ofertas,62,pocas promociones
+C0045,36,180,critico,4,si,5,2,cobro excesivo,83,precios altos
+C0046,3,70,regular,1,no,5,0,problema de cobertura,14,mala conexion
+C0047,62,250,excelente,5,si,4,0,mala atencion,125,mala atencion
+C0048,18,90,regular,2,no,1,1,pocas ofertas,24,pocas promociones
+C0049,7,110,critico,1,no,7,1,cobro excesivo,20,precios altos
+C0050,18,130,excelente,2,si,5,3,problema de cobertura,46,mala conexion
+C0051,11,150,critico,1,no,4,1,mala atencion,37,mala atencion
+C0052,48,200,excelente,3,si,2,1,pocas ofertas,98,pocas promociones
+C0053,6,80,regular,1,no,5,0,baja velocidad,14,mala conexion
+C0054,26,120,excelente,2,si,0,0,pocas ofertas,60,pocas promociones
+C0055,39,180,critico,4,si,6,2,cobro excesivo,81,precios altos
+C0056,1,70,regular,1,no,6,0,problema de cobertura,12,mala conexion
+C0057,58,250,excelente,5,si,2,0,mala atencion,123,mala atencion
+C0058,14,90,regular,2,no,2,1,pocas ofertas,34,pocas promociones
+C0059,10,110,critico,1,no,8,1,cobro excesivo,30,precios altos
+C0060,21,130,excelente,2,si,3,3,problema de cobertura,44,mala conexion
+C0061,14,150,critico,1,no,5,1,mala atencion,35,mala atencion
+C0062,51,200,excelente,3,si,3,1,pocas ofertas,96,precios altos
+C0063,2,80,regular,1,no,3,0,baja velocidad,12,mala conexion
+C0064,22,120,excelente,2,si,1,0,pocas ofertas,58,pocas promociones
+C0065,35,180,critico,4,si,7,2,cobro excesivo,79,precios altos
+C0066,2,70,regular,1,no,4,0,problema de cobertura,10,mala conexion
+C0067,61,250,excelente,5,si,3,0,mala atencion,121,mala atencion
+C0068,17,90,regular,2,no,3,1,pocas ofertas,32,pocas promociones
+C0069,13,110,critico,1,no,6,1,cobro excesivo,28,precios altos
+C0070,17,130,excelente,2,si,4,3,problema de cobertura,54,mala conexion
+C0071,10,150,critico,1,no,6,1,mala atencion,45,mala atencion
+C0072,47,200,excelente,3,si,1,1,pocas ofertas,94,precios altos
+C0073,5,80,regular,1,no,4,0,baja velocidad,10,mala conexion
+C0074,25,120,excelente,2,si,2,0,pocas ofertas,56,pocas promociones
+C0075,38,180,critico,4,si,5,2,cobro excesivo,77,mala conexion
+C0076,5,70,regular,1,no,5,0,problema de cobertura,8,mala conexion
+C0077,57,250,excelente,5,si,4,0,mala atencion,119,precios altos
+C0078,13,90,regular,2,no,1,1,pocas ofertas,30,pocas promociones
+C0079,9,110,critico,1,no,7,1,cobro excesivo,26,mala conexion
+C0080,20,130,excelente,2,si,5,3,problema de cobertura,52,mala conexion
+C0081,13,150,critico,1,no,4,1,mala atencion,43,mala atencion
+C0082,50,200,excelente,3,si,2,1,pocas ofertas,104,precios altos
+C0083,8,80,regular,1,no,5,0,baja velocidad,20,mala conexion
+C0084,21,120,excelente,2,si,0,0,pocas ofertas,54,pocas promociones
+C0085,34,180,critico,4,si,6,2,cobro excesivo,75,precios altos
+C0086,1,70,regular,1,no,6,0,problema de cobertura,6,mala conexion
+C0087,60,250,excelente,5,si,2,0,mala atencion,117,mala atencion
+C0088,16,90,regular,2,no,2,1,pocas ofertas,28,pocas promociones
+C0089,12,110,critico,1,no,8,1,cobro excesivo,24,mala conexion
+C0090,23,130,excelente,2,si,3,3,problema de cobertura,50,mala conexion
+C0091,9,150,critico,1,no,5,1,mala atencion,41,mala atencion
+C0092,46,200,excelente,3,si,3,1,pocas ofertas,102,pocas promociones
+C0093,4,80,regular,1,no,3,0,baja velocidad,18,mala conexion
+C0094,24,120,excelente,2,si,1,0,pocas ofertas,64,pocas promociones
+C0095,37,180,critico,4,si,7,2,cobro excesivo,85,precios altos
+C0096,4,70,regular,1,no,4,0,problema de cobertura,5,precios altos
+C0097,63,250,excelente,5,si,3,0,mala atencion,115,mala atencion
+C0098,12,90,regular,2,no,3,1,pocas ofertas,26,pocas promociones
+C0099,8,110,critico,1,no,6,1,cobro excesivo,22,precios altos
+C0100,19,130,excelente,2,si,4,3,problema de cobertura,48,mala conexion
+C0101,12,150,critico,1,no,6,1,mala atencion,39,mala atencion
+C0102,49,200,excelente,3,si,1,1,pocas ofertas,100,precios altos
+C0103,7,80,regular,1,no,4,0,baja velocidad,16,mala conexion
+C0104,27,120,excelente,2,si,2,0,pocas ofertas,62,pocas promociones
+C0105,33,180,critico,4,si,5,2,cobro excesivo,83,pocas promociones
+C0106,1,70,regular,1,no,5,0,problema de cobertura,14,mala conexion
+C0107,59,250,excelente,5,si,4,0,mala atencion,125,mala atencion
+C0108,15,90,regular,2,no,1,1,pocas ofertas,24,pocas promociones
+C0109,11,110,critico,1,no,7,1,cobro excesivo,20,precios altos
+C0110,22,130,excelente,2,si,5,3,problema de cobertura,46,mala conexion
+C0111,15,150,critico,1,no,4,1,mala atencion,37,mala atencion
+C0112,45,200,excelente,3,si,2,1,pocas ofertas,98,precios altos
+C0113,3,80,regular,1,no,5,0,baja velocidad,14,mala conexion
+C0114,23,120,excelente,2,si,0,0,pocas ofertas,60,mala atencion
+C0115,36,180,critico,4,si,6,2,cobro excesivo,81,precios altos
+C0116,3,70,regular,1,no,6,0,problema de cobertura,12,mala conexion
+C0117,62,250,excelente,5,si,2,0,mala atencion,123,mala atencion
+C0118,18,90,regular,2,no,2,1,pocas ofertas,34,pocas promociones
+C0119,7,110,critico,1,no,8,1,cobro excesivo,30,precios altos
+C0120,18,130,excelente,2,si,3,3,problema de cobertura,44,mala conexion
+C0121,11,150,critico,1,no,5,1,mala atencion,35,mala atencion
+C0122,48,200,excelente,3,si,3,1,pocas ofertas,96,precios altos
+C0123,6,80,regular,1,no,3,0,baja velocidad,12,mala conexion
+C0124,26,120,excelente,2,si,1,0,pocas ofertas,58,pocas promociones
+C0125,39,180,critico,4,si,7,2,cobro excesivo,79,precios altos
+C0126,1,70,regular,1,no,4,0,problema de cobertura,10,mala conexion
+C0127,58,250,excelente,5,si,3,0,mala atencion,121,mala atencion
+C0128,14,90,regular,2,no,3,1,pocas ofertas,32,pocas promociones
+C0129,10,110,critico,1,no,6,1,cobro excesivo,28,precios altos
+C0130,21,130,excelente,2,si,4,3,problema de cobertura,54,mala conexion
+C0131,14,150,critico,1,no,6,1,mala atencion,45,mala atencion
+C0132,51,200,excelente,3,si,1,1,pocas ofertas,94,precios altos
+C0133,2,80,regular,1,no,4,0,baja velocidad,10,mala atencion
+C0134,22,120,excelente,2,si,2,0,pocas ofertas,56,pocas promociones
+C0135,35,180,critico,4,si,5,2,cobro excesivo,77,precios altos
+C0136,2,70,regular,1,no,5,0,problema de cobertura,8,mala conexion
+C0137,61,250,excelente,5,si,4,0,mala atencion,119,mala atencion
+C0138,17,90,regular,2,no,1,1,pocas ofertas,30,mala atencion
+C0139,13,110,critico,1,no,7,1,cobro excesivo,26,precios altos
+C0140,17,130,excelente,2,si,5,3,problema de cobertura,52,mala atencion
+C0141,10,150,critico,1,no,4,1,mala atencion,43,mala atencion
+C0142,47,200,excelente,3,si,2,1,pocas ofertas,104,precios altos
+C0143,5,80,regular,1,no,5,0,baja velocidad,20,precios altos
+C0144,25,120,excelente,2,si,0,0,pocas ofertas,54,pocas promociones
+C0145,38,180,critico,4,si,6,2,cobro excesivo,75,precios altos
+C0146,5,70,regular,1,no,6,0,problema de cobertura,6,mala conexion
+C0147,57,250,excelente,5,si,2,0,mala atencion,117,mala atencion
+C0148,13,90,regular,2,no,2,1,pocas ofertas,28,pocas promociones
+C0149,9,110,critico,1,no,8,1,cobro excesivo,24,precios altos
+C0150,20,130,excelente,2,si,3,3,problema de cobertura,50,mala conexion
+C0151,13,150,critico,1,no,5,1,mala atencion,41,mala atencion
+C0152,50,200,excelente,3,si,3,1,pocas ofertas,102,precios altos
+C0153,8,80,regular,1,no,3,0,baja velocidad,18,precios altos
+C0154,21,120,excelente,2,si,1,0,pocas ofertas,64,pocas promociones
+C0155,34,180,critico,4,si,7,2,cobro excesivo,85,pocas promociones
+C0156,1,70,regular,1,no,4,0,problema de cobertura,5,mala conexion
+C0157,60,250,excelente,5,si,3,0,mala atencion,115,pocas promociones
+C0158,16,90,regular,2,no,3,1,pocas ofertas,26,pocas promociones
+C0159,12,110,critico,1,no,6,1,cobro excesivo,22,mala atencion
+C0160,23,130,excelente,2,si,4,3,problema de cobertura,48,mala conexion
+C0161,9,150,critico,1,no,6,1,mala atencion,39,mala atencion
+C0162,46,200,excelente,3,si,1,1,pocas ofertas,100,precios altos
+C0163,4,80,regular,1,no,4,0,baja velocidad,16,mala conexion
+C0164,24,120,excelente,2,si,2,0,pocas ofertas,62,pocas promociones
+C0165,37,180,critico,4,si,5,2,cobro excesivo,83,precios altos
+C0166,4,70,regular,1,no,5,0,problema de cobertura,14,mala conexion
+C0167,63,250,excelente,5,si,4,0,mala atencion,125,mala atencion
+C0168,12,90,regular,2,no,1,1,pocas ofertas,24,pocas promociones
+C0169,8,110,critico,1,no,7,1,cobro excesivo,20,precios altos
+C0170,19,130,excelente,2,si,5,3,problema de cobertura,46,mala atencion
+C0171,12,150,critico,1,no,4,1,mala atencion,37,mala atencion
+C0172,49,200,excelente,3,si,2,1,pocas ofertas,98,precios altos
+C0173,7,80,regular,1,no,5,0,baja velocidad,14,precios altos
+C0174,27,120,excelente,2,si,0,0,pocas ofertas,60,pocas promociones
+C0175,33,180,critico,4,si,6,2,cobro excesivo,81,precios altos
+C0176,1,70,regular,1,no,6,0,problema de cobertura,12,mala conexion
+C0177,59,250,excelente,5,si,2,0,mala atencion,123,mala atencion
+C0178,15,90,regular,2,no,2,1,pocas ofertas,34,pocas promociones
+C0179,11,110,critico,1,no,8,1,cobro excesivo,30,mala conexion
+C0180,22,130,excelente,2,si,3,3,problema de cobertura,44,mala conexion
+C0181,15,150,critico,1,no,5,1,mala atencion,35,mala atencion
+C0182,45,200,excelente,3,si,3,1,pocas ofertas,96,precios altos
+C0183,3,80,regular,1,no,3,0,baja velocidad,12,mala conexion
+C0184,23,120,excelente,2,si,1,0,pocas ofertas,58,precios altos
+C0185,36,180,critico,4,si,7,2,cobro excesivo,79,precios altos
+C0186,3,70,regular,1,no,4,0,problema de cobertura,10,mala conexion
+C0187,62,250,excelente,5,si,3,0,mala atencion,121,mala atencion
+C0188,18,90,regular,2,no,3,1,pocas ofertas,32,pocas promociones
+C0189,7,110,critico,1,no,6,1,cobro excesivo,28,precios altos
+C0190,18,130,excelente,2,si,4,3,problema de cobertura,54,mala conexion
+C0191,11,150,critico,1,no,6,1,mala atencion,45,mala atencion
+C0192,48,200,excelente,3,si,1,1,pocas ofertas,94,precios altos
+C0193,6,80,regular,1,no,4,0,baja velocidad,10,precios altos
+C0194,26,120,excelente,2,si,2,0,pocas ofertas,56,pocas promociones
+C0195,39,180,critico,4,si,5,2,cobro excesivo,77,precios altos
+C0196,1,70,regular,1,no,5,0,problema de cobertura,8,mala conexion
+C0197,58,250,excelente,5,si,4,0,mala atencion,119,mala atencion
+C0198,14,90,regular,2,no,1,1,pocas ofertas,30,mala atencion
+C0199,10,110,critico,1,no,7,1,cobro excesivo,26,precios altos
+C0200,21,130,excelente,2,si,5,3,problema de cobertura,52,mala conexion
