@@ -9,20 +9,20 @@ import { ElMessage } from 'element-plus'
 
 document.title = 'Iniciar Sesión'
 
-const email = ref('')
+const username = ref('')
 const password = ref('')
 const isLoggingIn = ref(false)
 const router = useRouter()
 const route = useRoute()
 
-async function handleLogin() { 
+async function handleLogin() {
   if (isLoggingIn.value) return
 
   isLoggingIn.value = true
 
   try {
     const res = await api.post('/login', {
-      username: email.value,
+      username: username.value,
       password: password.value
     })
 
@@ -65,7 +65,7 @@ async function handleLogin() {
         </div>
         <el-form @submit.prevent="handleLogin" class="login-form">
           <el-form-item>
-            <el-input v-model="email" placeholder="Correo electrónico" :prefix-icon="Message" size="large" />
+            <el-input v-model="username" placeholder="Usuario" :prefix-icon="Message" size="large" />
           </el-form-item>
           <el-form-item>
             <el-input v-model="password" type="password" placeholder="Contraseña" :prefix-icon="Lock" size="large"
