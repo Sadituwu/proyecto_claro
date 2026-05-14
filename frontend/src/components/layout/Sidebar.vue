@@ -118,7 +118,7 @@ onMounted(() => {
       style="background-color: var(--el-bg-color); color: var(--el-text-color-regular);"
       active-text-color="var(--el-color-primary)" @select="(key) => { activeMenu = key; drawerVisible = false }">
       <template v-for="item in filteredMenu" :key="item.title">
-        <!-- SUBMENU EN MÓVIL -->
+        <!-- SUBMENU EN MÓVIL --> 
         <el-sub-menu v-if="item.children" :index="item.title">
           <template #title>
             <el-icon>

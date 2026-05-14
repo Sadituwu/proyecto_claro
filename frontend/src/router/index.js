@@ -49,7 +49,7 @@ const routes = [
         path: '/:pathMatch(.*)*',
         redirect: '/modelo'
     }
-]
+] 
 
 
 const router = createRouter({

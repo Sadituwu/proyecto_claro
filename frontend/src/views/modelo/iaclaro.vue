@@ -420,7 +420,7 @@ async function enviarFormulario() {
     border: 1px solid var(--el-border-color);
 }
 
-:deep(.el-input__wrapper:hover),
+:deep(.el-input__wrapper:hover), 
 :deep(.el-select__wrapper:hover) {
     border-color: var(--el-color-primary-light-5);
 }

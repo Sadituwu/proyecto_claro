@@ -32,7 +32,7 @@ function showLogoutDialog() {
 }
 
 function cancelLogout() {
-  logoutDialogVisible.value = false
+  logoutDialogVisible.value = false 
 }
 
 function handleCommand(command) {

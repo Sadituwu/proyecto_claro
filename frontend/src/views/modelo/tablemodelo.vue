@@ -149,7 +149,7 @@ function getPerfilTag(type) {
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-                    <!-- PERFIL -->
+                    <!-- PERFIL --> 
                     <div>
                         <label class="filter-label">Perfil Pagador</label>
 

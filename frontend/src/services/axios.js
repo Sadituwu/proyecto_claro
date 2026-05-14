@@ -6,7 +6,7 @@ const api = axios.create({
   baseStorage: import.meta.env.VITE_API_URL,
   headers: {
     'Content-Type': 'application/json',
-    Accept: 'application/json',
+    Accept: 'application/json', 
   },
 });
 

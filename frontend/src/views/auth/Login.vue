@@ -15,7 +15,7 @@ const isLoggingIn = ref(false)
 const router = useRouter()
 const route = useRoute()
 
-async function handleLogin() {
+async function handleLogin() { 
   if (isLoggingIn.value) return
 
   isLoggingIn.value = true
