@@ -10,14 +10,13 @@ import Login from '@/views/auth/Login.vue'
 /* --- Vistas privadas --- */
 
 import AuthLayout from '@/layout/AuthLayout.vue'
-import Dashboard from '@/views/home/Dashboard.vue'
 import modeloias from '@/views/modelo/iaclaro.vue'
 import registro from '@/views/modelo/tablemodelo.vue'
+import { pa } from 'element-plus/es/locale/index.mjs'
 
 
 
 const routes = [
-
     {
         path: '/',
         component: GuestLayout,
@@ -25,25 +24,13 @@ const routes = [
         children: [
             { path: '', name: 'Home', component: Home },
             { path: 'login', name: 'Login', component: Login },
-
         ]
     },
 
     {
         path: '/',
         component: AuthLayout,
-
         children: [
-            {
-                path: 'dashboard',
-                name: 'Dashboard',
-                component: Dashboard,
-            },
-            {
-                path: 'modelo',
-                name: 'Modelo',
-                component: modeloias,
-            },
             {
                 path: 'modelo',
                 name: 'Modelo',
@@ -57,7 +44,11 @@ const routes = [
         ],
     },
 
-
+    // Ruta global para cualquier URL inválida
+    {
+        path: '/:pathMatch(.*)*',
+        redirect: '/modelo'
+    }
 ]
 
 
@@ -73,7 +64,7 @@ router.beforeEach((to, from, next) => {
 
     // Si ya está logeado, no acceder a páginas públicas
     if (to.meta.guestOnly && token) {
-        return next({ name: 'Dashboard' });
+        return next({ name: 'Modelo' });
     }
 
     // Si la ruta privada no tiene token → login

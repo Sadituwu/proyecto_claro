@@ -30,7 +30,7 @@ async function handleLogin() {
 
     localStorage.setItem('user', JSON.stringify(res.data))
 
-    router.push({ name: 'Dashboard' })
+    router.push({ name: 'Modelo' })
 
   } catch (error) {
     console.error(error)

@@ -17,23 +17,14 @@ const isLoggingOut = ref(false)
 async function logout() {
   isLoggingOut.value = true
 
-  try {
-    await api.post('/logout')
-    ElMessage.success('Sesión cerrada exitosamente')
-  } catch (error) {
-    console.error('Error al cerrar sesión:', error)
-    ElMessage.error('Error al cerrar sesión')
-  } finally {
-    localStorage.removeItem('access_token')
-    localStorage.removeItem('user')
-    localStorage.removeItem('activeMenu')
-    localStorage.removeItem('sidebarCollapsed')
+  localStorage.clear()
 
-    isLoggingOut.value = false
-    logoutDialogVisible.value = false
+  ElMessage.success('Sesión cerrada exitosamente')
 
-    router.push({ name: 'Login' })
-  }
+  isLoggingOut.value = false
+  logoutDialogVisible.value = false
+
+  router.push({ name: 'Login' })
 }
 
 function showLogoutDialog() {
@@ -64,18 +55,11 @@ function handleCommand(command) {
         <el-icon class="mr-1">
           <User />
         </el-icon>
-        {{ user.name }}
+        {{ user.rol }}
       </span>
 
       <template #dropdown>
         <el-dropdown-menu>
-          <el-dropdown-item command="profile">
-            <el-icon class="mr-1">
-              <User />
-            </el-icon>
-            Mi Perfil
-          </el-dropdown-item>
-
           <el-dropdown-item divided>
             <div class="flex items-center gap-2">
               <el-switch v-model="isDark" inline-prompt :active-icon="Moon" :inactive-icon="Sunny"
@@ -98,7 +82,7 @@ function handleCommand(command) {
       :close-on-press-escape="false">
       <div class="text-center py-4">
         <div class="flex justify-center mb-4">
-          <img src="" alt="Logout Icon" class="w-[180px] mx-auto" />
+          <img src="@/assets/sistema/logo-dashboard.png" alt="Logout-claro" class="w-[180px] mx-auto" />
         </div>
         <h2 class="text-xl font-bold mb-2" style="color: var(--el-text-color-primary)">
           ¿Seguro que deseas salir del sistema?

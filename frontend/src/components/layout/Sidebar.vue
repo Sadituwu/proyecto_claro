@@ -69,7 +69,7 @@ onMounted(() => {
     class="transition-all duration-300 bg-[var(--el-bg-color)]">
     <div class="p-3 flex items-center gap-3">
       <div v-show="!isCollapsed" class="flex-1 text-center">
-        <router-link to="/dashboard">
+        <router-link to="/modelo">
           <img src="@/assets/sistema/logo-dashboard.png" alt="Logo-CLaro" class="w-[180px] mx-auto" />
         </router-link>
       </div>
@@ -108,8 +108,8 @@ onMounted(() => {
   <el-drawer v-else v-model="drawerVisible" :with-header="false" size="230px" direction="ltr">
     <div class="p-3 flex items-center gap-3">
       <div class="flex-1 text-center">
-        <router-link to="/dashboard" @click="drawerVisible = false">
-          <img src="" alt="SENATI Logo" class="w-[180px] mx-auto" />
+        <router-link to="/modelo" @click="drawerVisible = false">
+          <img src="@/assets/sistema/logo-dashboard.png" alt="Logo-CLaro" class="w-[180px] mx-auto" />
         </router-link>
       </div>
       <el-button @click="drawerVisible = false" :icon="DArrowLeft" />
