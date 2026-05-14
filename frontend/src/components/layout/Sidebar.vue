@@ -19,12 +19,12 @@ const updateIsMobile = () => {
   isMobile.value = window.innerWidth <= 768
 }
 
-window.addEventListener('resize', updateIsMobile)
+window.addEventListener('resize', updateIsMobile) 
 
 const user = JSON.parse(localStorage.getItem('user') || '{}')
 
 const filteredMenu = computed(() => {
-  return menuItems.filter(item => item.roles.includes(user?.role))
+  return menuItems.filter(item => item.roles.includes(user?.rol) || 'guest')
 })
 
 const findActiveMenu = (currentPath) => {
@@ -70,7 +70,7 @@ onMounted(() => {
     <div class="p-3 flex items-center gap-3">
       <div v-show="!isCollapsed" class="flex-1 text-center">
         <router-link to="/dashboard">
-          <img src="" alt="SENATI Logo" class="w-[180px] mx-auto" />
+          <img src="@/assets/sistema/logo-dashboard.png" alt="Logo-CLaro" class="w-[180px] mx-auto" />
         </router-link>
       </div>
       <el-button @click="isCollapsed = !isCollapsed" :class="isCollapsed ? 'rotate-180' : ''" :icon="DArrowLeft" />

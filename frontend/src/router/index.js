@@ -11,6 +11,8 @@ import Login from '@/views/auth/Login.vue'
 
 import AuthLayout from '@/layout/AuthLayout.vue'
 import Dashboard from '@/views/home/Dashboard.vue'
+import modeloias from '@/views/modelo/iaclaro.vue'
+import registro from '@/views/modelo/tablemodelo.vue'
 
 
 
@@ -30,17 +32,29 @@ const routes = [
     {
         path: '/',
         component: AuthLayout,
-        meta: { requiresAuth: true },
 
         children: [
             {
                 path: 'dashboard',
                 name: 'Dashboard',
                 component: Dashboard,
-                meta: { roles: ['admin', 'client', 'support'] }
             },
-
-        ]
+            {
+                path: 'modelo',
+                name: 'Modelo',
+                component: modeloias,
+            },
+            {
+                path: 'modelo',
+                name: 'Modelo',
+                component: modeloias,
+            },
+            {
+                path: 'registro',
+                name: 'Registro',
+                component: registro,
+            },
+        ],
     },
 
 

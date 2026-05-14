@@ -17,39 +17,30 @@ const route = useRoute()
 
 async function handleLogin() {
   if (isLoggingIn.value) return
+
   isLoggingIn.value = true
+
   try {
-    const res = await api.post('/login', { email: email.value, password: password.value })
-    localStorage.setItem('access_token', res.data.access_token)
-    localStorage.setItem('user', JSON.stringify(await fetchUser()))
+    const res = await api.post('/login', {
+      username: email.value,
+      password: password.value
+    })
+
+    console.log(res.data)
+
+    localStorage.setItem('user', JSON.stringify(res.data))
+
     router.push({ name: 'Dashboard' })
+
   } catch (error) {
-    const code = error?.response?.data?.code
-    if (code === 'email_not_verified') {
-      router.push({ name: 'VerifyEmail', query: { email: email.value, onload: true } })
-      ElMessage.warning('Tu correo aún no ha sido verificado.')
-    } else {
-      ElMessage.error('Credenciales incorrectas.')
-    }
+    console.error(error)
+
+    ElMessage.error('Credenciales incorrectas.')
   } finally {
     isLoggingIn.value = false
   }
 }
 
-async function fetchUser() {
-  try { return (await api.get('/me')).data } catch { return null }
-}
-
-onMounted(async () => {
-  const url = route.query.url
-  if (!url) return
-  try {
-    await axios.get(url)
-    ElMessage.success('Correo verificado correctamente.')
-  } catch {
-    ElMessage.error('El enlace expiró o es inválido.')
-  }
-})
 </script>
 
 <template>
@@ -74,8 +65,7 @@ onMounted(async () => {
         </div>
         <el-form @submit.prevent="handleLogin" class="login-form">
           <el-form-item>
-            <el-input v-model="email" type="email" placeholder="Correo electrónico" :prefix-icon="Message"
-              size="large" />
+            <el-input v-model="email" placeholder="Correo electrónico" :prefix-icon="Message" size="large" />
           </el-form-item>
           <el-form-item>
             <el-input v-model="password" type="password" placeholder="Contraseña" :prefix-icon="Lock" size="large"

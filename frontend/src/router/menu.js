@@ -1,8 +1,10 @@
-import { HomeFilled, Tickets, User, Setting, Avatar, FolderOpened, Reading } from '@element-plus/icons-vue'
+import { HomeFilled, Tickets, User, Setting, Avatar, FolderOpened, DataAnalysis , List } from '@element-plus/icons-vue'
 
 export const menuItems = [
 
     { title: 'Dashboard', icon: HomeFilled, routeName: '/dashboard', roles: ['admin', 'client', 'support'] },
+    { title: 'Modelo', icon: DataAnalysis , routeName: '/modelo', roles: ['admin', 'client', 'support'] },
+    { title: 'Registro', icon: List  , routeName: '/registro', roles: ['admin', 'client', 'support'] },
 
 ];
 
