@@ -38,10 +38,6 @@ modelo = LogisticRegression(max_iter=1000, C=0.5)
 scores = cross_val_score(modelo, X_scaled, y, cv=5)
 modelo.fit(X_scaled, y)
 
-# Fix compatibilidad sklearn 1.7.x en servidor
-if hasattr(modelo, 'multi_class'):
-    delattr(modelo, 'multi_class')
-
 # Calculamos la estabilidad media
 estabilidad_media = scores.mean()
 
